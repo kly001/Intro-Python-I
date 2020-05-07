@@ -1,2 +1,3 @@
 # Print "Hello, world!" to your terminal
-print
+greet=('"Hello, world!"')
+print(greet)
