@@ -12,9 +12,11 @@ Use Python's slice syntax to achieve the following:
 a = [2, 4, 1, 7, 9, 6]
 
 # Output the second element: 4:
-print()
+second = slice(1,2)
+print(a[second])
 
 # Output the second-to-last element: 9
+seclst =slice()
 print()
 
 # Output the last three elements in the array: [7, 9, 6]

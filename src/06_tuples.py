@@ -45,4 +45,4 @@ for digit in t:
 u = (1,)  # What needs to be added to make this work?
 # print_tuple(u)
 for numb in u:
-    print(u)
+    print(numb)
