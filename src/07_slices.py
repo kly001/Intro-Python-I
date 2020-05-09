@@ -16,20 +16,24 @@ second = slice(1,2)
 print(a[second])
 
 # Output the second-to-last element: 9
-seclst =slice()
-print()
+seclast = slice(4,5)
+print(a[seclast])
 
 # Output the last three elements in the array: [7, 9, 6]
-print()
+last3 = slice(3,6)
+print(a[last3])
 
 # Output the two middle elements in the array: [1, 7]
-print()
+mid2 = slice(2,4)
+print(a[mid2])
 
 # Output every element except the first one: [4, 1, 7, 9, 6]
-print()
+except_first = slice(1,6)
+print(a[except_first])
 
 # Output every element except the last one: [2, 4, 1, 7, 9]
-print()
+except_last = slice(0,5)
+print(a[except_last])
 
 # For string s...
 
@@ -37,4 +41,4 @@ s = "Hello, world!"
 
 # Output just the 8th-12th characters: "world"
 greet=("Hello, world!")
-print (greet)
+print (greet[7:12])
