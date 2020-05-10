@@ -52,7 +52,7 @@ def outer():
         y = 999
 
     inner()
-      # This prints 999.
+# This prints 999.
     print(y)
 
 outer()
