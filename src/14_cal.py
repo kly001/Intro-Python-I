@@ -32,10 +32,12 @@ import calendar
 from datetime import datetime
 
 cal = calendar.TextCalendar(calendar.SUNDAY)
-year = input("Enter a year:  ")
-month = input("Enter a month(number):  ")
-print(f'{int(year)},{int(month)}')
-int_year = int(year)
+year = input("Pick a year:  ")
+month = input("Pick the number of a month(January=1; February=2; March=3; April=4; May=5; June=6; July=7; August=8;September=9; October=10; November=11; December=12 ):  ")
+# print(f'{int(year)},{int(month)}')
+input_year = int(year)
+
 int_month = int(month)
-str = cal.formatmonth(int_year,int_month)
+str = cal.formatmonth(input_year,int_month)
 print(str)
+
