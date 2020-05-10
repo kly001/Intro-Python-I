@@ -52,5 +52,7 @@ print(waypoints)
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
 
-print(len(waypoints))
+for fldVal in waypoints:
+    for key in fldVal:
+        print(f'{key}: {fldVal[key]}')
 
