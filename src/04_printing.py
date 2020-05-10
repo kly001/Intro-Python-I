@@ -12,7 +12,7 @@ rounded_y =(round(y,2))
 # Using the print operator (%), print the following feeding in the values of x,
 # y, and z:
 # x is 10, y is 2.25, z is "I like turtles!"
-print('x is% 2d, y is% 2.2f, z is "% s"' % (x, y, z))
+print('x is% d, y is% f, z is "% s"' % (x, y, z))
 
 
 # Use the 'format' string method to print the same thing
@@ -20,3 +20,5 @@ print('x is {}, y is {}, z is "{}"'.format(x, rounded_y, z))
 
 # Finally, print the same thing using an f-string
 print(f'x is {x}, y is {rounded_y}, z is "{z}"')
+
+# print(dir(z))
