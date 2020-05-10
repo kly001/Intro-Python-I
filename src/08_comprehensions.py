@@ -40,10 +40,11 @@ print(y)
 # Use a list comprehension to create a list containing only the _even_ elements
 # the user entered into list x.
 
- ##x = input(6,3,19,16,35,99,56,24).split(',')
+##x = input(6,3,19,16,35,99,56,24).split(',')
+
 
 # What do you need between the square brackets to make it work?
 
-my_nums = [6,3,19,16,35,99,56,24]
-evens = [x for x in my_nums if x%2==0]
-print(evens)
+#my_nums = [6,3,19,16,35,99,56,24]
+# evens = [x for x in my_nums if x%2==0]
+# print(evens)
