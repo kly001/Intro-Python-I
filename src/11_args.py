@@ -5,8 +5,8 @@
 # the sum. This is what you'd consider to be a regular, normal function.
 
 # YOUR CODE HERE
-def f1(a,b):
-    return a+b
+def f1(val1,val2):
+    return val1+val2
 
 print(f1(1, 2))
 
@@ -73,5 +73,5 @@ d = {
 }
 
 # How do you have to modify the f4 call below to make this work?
-f4(d)
+f4(**d)
 
