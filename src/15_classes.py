@@ -15,7 +15,21 @@ print("Lon: ",place1.lon)
 # Make a class Waypoint that can be passed parameters `name`, `lat`, and `lon` to the
 # constructor. It should inherit from LatLon. Look up the `super` method.
 
+print(place1) ##<__main__.LatLon object at 0x009B8148>
+print(place1.__doc__)
+
+## Note - (source:https://stackoverflow.com/questions/576169/understanding-python-super-with-init-methods)
+## The reason we use super is so that child classes that may be 
+# using cooperative multiple inheritance will call the 
+# correct next parent class function in the Method 
+# Resolution Order (MRO).
+
+# class ChildB(Base):
+#     def __init__(self):
+#         super().__init__() 
+
 # YOUR CODE HERE
+
 
 
 # Make a class Geocache that can be passed parameters `name`, `difficulty`,
