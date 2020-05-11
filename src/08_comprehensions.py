@@ -49,5 +49,5 @@ x = input("Enter comma-separated numbers: ").split(',')
 # evens = [x for x in my_nums if x%2==0]
 # print(evens)
 
-y=[numb for numb in x if float(numb)%2==0]
+y=[numb for numb in x if int(numb)%2==0]
 print(y)
