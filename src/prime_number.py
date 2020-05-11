@@ -14,3 +14,5 @@ if (cnt == 0 and Num != 1):
     print(" %d is a Prime Number" %Num)
 else:
     print(" %d is not a Prime Number" %Num)
+
+## SOURCE: https://www.tutorialgateway.org/python-program-to-find-prime-number/
