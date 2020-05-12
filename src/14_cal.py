@@ -31,64 +31,55 @@ import sys
 import calendar
 from datetime import datetime
 
-# cal = calendar.TextCalendar(calendar.SUNDAY)
-# year = input("Pick a year:  ")
-# month = input("Pick the number of a month(January=1; February=2; March=3; April=4; May=5; June=6; July=7; August=8;September=9; October=10; November=11; December=12 ):  ")
-# # print(f'{int(year)},{int(month)}')
-# input_year = int(year)
-
-# int_month = int(month)
-# str = cal.formatmonth(input_year,int_month)
-# print(str)
-
-# capture command line inputs
-#  print the calendar
-#  handle different numbers of command line arguments
-
-
-today = datetime.today()
-
-month, year = today.month, today.year
-
 cal = calendar.TextCalendar(calendar.SUNDAY)
+year = input("Pick a year:  ")
+month = input("Pick the number of a month(January=1; February=2; March=3; April=4; May=5; June=6; July=7; August=8;September=9; October=10; November=11; December=12 ):  ")
+# print(f'{int(year)},{int(month)}')
+input_year = int(year)
 
-# print(sys.argv)
-
-if len(sys.argv) ==1:
-  calendar.prmonth(today.year, today.month)
-
-elif len(sys.argv) == 2:
-  calendar.prmonth(today.year, int(sys.argv[1]))
-
-elif len(sys.argv) == 3:
-  calendar.prmonth(int(sys.argv[2]), int(sys.argv[1]))
-
-else:
-  print("usage: filename month year")
-  sys.exit(1)
+int_month = int(month)
+str = cal.formatmonth(input_year,int_month)
+print(str)
 
 
-## A. Johnson's Solution:
+###################################################################################
+##  FROM CLASS:
 
-# Time related Variables
-# newdate = datetime.today()
-# cal = calendar.TextCalendar(firstweekday=6);
-# # Formatted input
-# x = [d.strip() for d in input("Enter comma-separated month and year in number format (ex., 5, 2020)... ").split(',')]
-# x = None if x == [''] else x
-# def print_cal(x):
-#       if x == None:
-#           print(cal.formatmonth(newdate.year, newdate.month))
-#       elif len(x) == 1:
-#           print(cal.formatmonth(newdate.year, int(x[0])))
-#       elif len(x) == 2:
-#           print(cal.formatmonth(int(x[1]), int(x[0]) ))
-#       else:
-#           print("PLEASE RE-ENTER the comma-separated month and year in number format (ex., 5, 2020)")
-# print_cal(x)
-
-
-
-
-
-
+# # get month and year in a usable form
+# today = datetime.today()
+# ​
+# month, year = today.month, today.year
+# ​
+# # capture command line inputs in a variable
+# # print the calendar
+# # handle different numbers of command line arguments
+# ​
+# cal = calendar.TextCalendar(firstweekday=6)
+# # print(calendar.month(today.year, today.month))
+# ​
+# if len(sys.argv) == 1:
+#     calendar.prmonth(today.year, today.month)
+# ​
+# elif len(sys.argv) == 2:
+#       calendar.prmonth(today.year, int(sys.argv[1]))
+# ​
+# elif len(sys.argv) == 3:
+#       calendar.prmonth(int(sys.argv[2]), int(sys.argv[1]))
+# ​
+# else:
+#   print("usage: filename month year")
+#   sys.exit(1)
+# ​
+# ​
+# def parent(args):
+#     script_name, *args = sys.argv
+#     if not args:
+#         rend_cal() 
+#     elif len(args) == 1:  
+#         month = int(args[0]) 
+#         rend_cal(month)  
+#     elif len(args) == 2:
+#         month, year = map(int, args) 
+#         rend_cal(month, year)  
+#     else:
+#         print(utilization())
