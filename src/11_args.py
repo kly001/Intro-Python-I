@@ -16,7 +16,7 @@ print(f1(1, 2))
 
 # YOUR CODE HERE
 
-def f2(*args):
+def f2(*args): # * operator changes this to a tuple
     return sum(args)
 
 print(f2(1))                    # Should print 1
@@ -65,7 +65,7 @@ f4(a=12, b=30)
 # key: city, value: Berkeley
 # key: population, value: 121240
 # key: founded, value: "March 23, 1868"
-f4(city="Berkeley", population=121240, founded="March 23, 1868")
+f4(city="Berkeley", population= 121240, founded="March 23, 1868")
 
 d = {
     "monster": "goblin",
